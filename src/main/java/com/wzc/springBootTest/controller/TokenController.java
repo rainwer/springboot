@@ -34,7 +34,6 @@ public class TokenController {
 		
 		HashMap<String, Object> result = new HashMap<>();
 		String token = tokenService.login(userName, password);
-//		String token =null;
 		if(token ==null) {
 			result.put("message", "invalid username or password");
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(result);
