@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -23,7 +24,7 @@ import com.wzc.springBootTest.service.TokenService;
 public class TokenController {
 	
 	private final static Log log = LogFactory.getLog(WebSecurityConfig.class);
-	
+	@Autowired
 	private TokenService tokenService;
 	
 	@PostMapping
