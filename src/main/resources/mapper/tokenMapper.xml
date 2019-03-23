@@ -6,4 +6,10 @@
   <select id="findUser" resultType="com.wzc.springBootTest.bean.User">
     select * from user 
   </select>
+  <insert id="insert">
+  	insert into user (username, password) values ('zhangsan','123456');
+  	insert into user (username, password) values ('lisi','123456');
+  	insert into role (name, code) values ('ABCD','abcd');
+  	insert into role (name, code) values ('AAAA','aaaa')
+  </insert>
 </mapper>

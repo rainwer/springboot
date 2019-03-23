@@ -12,5 +12,7 @@ import com.wzc.springBootTest.bean.User;
 public interface TokenDao {
 //	@Select("select * from user")
 	public User findUser(String username, String password);
+	
+	void insert();
 
 }
